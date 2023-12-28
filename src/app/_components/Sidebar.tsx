@@ -34,8 +34,8 @@ const music: NavigationItem[] = [
 
 export default function Sidebar() {
   return (
-    <div className='bg-gray-900 hidden xl:fixed xs:inset-y-0 xl:top-0 xl:bottom-0 xl:z-50 xl:flex xl:w-72 xl:flex-col gap-y-5 overflow-y-auto no-scrollbar px-6'>
-      <div className='flex h-16 shrink-0 items-center'>
+    <div className='bg-gray-900 hidden xl:fixed xs:inset-y-0 xl:top-0 xl:bottom-0 xl:z-50 xl:flex xl:w-72 xl:flex-col gap-y-5 overflow-y-auto no-scrollbar '>
+      <div className='flex h-16 shrink-0 items-center p-4'>
         <img
           className='h-8 w-auto'
           src='https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500'
@@ -45,12 +45,12 @@ export default function Sidebar() {
       <nav className='flex flex-1 flex-col'>
         <ul role='list' className='flex flex-1 flex-col gap-y-7'>
           <li>
-            <ul role='list' className='-mx-2 space-y-1'>
+            <ul role='list' className='space-y-1'>
               {navigation.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className='text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'
+                    className='text-gray-400 hover:text-orange-600 hover:bg-gradient-to-r hover:from-orange-600/30 hover:to-10% border-l-2 border-transparent hover:border-orange-600  group flex gap-x-3 py-2 px-4 text-sm leading-6 font-semibold'
                   >
                     <item.icon className='h-6 w-6 shrink-0' />
                     {item.name}
@@ -60,15 +60,15 @@ export default function Sidebar() {
             </ul>
           </li>
           <li>
-            <div className='text-xs font-semibold leading-6 text-gray-400'>
+            <div className='text-xs font-semibold leading-6 text-gray-400 px-4'>
               Your Music
             </div>
-            <ul role='list' className='-mx-2 mt-2 space-y-1'>
+            <ul role='list' className='mt-2 space-y-1'>
               {music.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className='text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'
+                    className='text-gray-400 hover:text-orange-600 hover:bg-gradient-to-r hover:from-orange-600/30 hover:to-10% border-l-2 border-transparent hover:border-orange-600 group flex gap-x-3 py-2 px-4 text-sm leading-6 font-semibold'
                   >
                     <item.icon
                       className='h-6 w-6 shrink-0'
@@ -81,16 +81,16 @@ export default function Sidebar() {
             </ul>
           </li>
           <li className='mb-auto'>
-            <div className='text-xs font-semibold leading-6 text-gray-400'>
+            <div className='text-xs font-semibold leading-6 text-gray-400 px-4'>
               Playlists
             </div>
-            <ul role='list' className='-mx-2 mt-2 space-y-1'>
+            <ul role='list' className='mt-2 space-y-1'>
               {playlists.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
                     className={
-                      'text-gray-400 hover:text-white hover:bg-gray-800 group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'
+                      'text-gray-400 hover:text-orange-600 hover:bg-gradient-to-r hover:from-orange-600/30 hover:to-10% border-l-2 border-transparent hover:border-orange-600 group flex gap-x-3 py-2 px-4 text-sm leading-6 font-semibold'
                     }
                   >
                     <span className={`font-black ${textToColor(item.name)}`}>
@@ -100,7 +100,7 @@ export default function Sidebar() {
                   </Link>
                 </li>
               ))}
-              <li>
+              <li className='px-6'>
                 <Link
                   href='#'
                   className='text-orange-600 text-sm flex items-center leading-6 font-semibold gap-x-1'
