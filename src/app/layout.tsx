@@ -4,6 +4,7 @@ import './globals.css';
 import Sidebar from '@/app/_components/Sidebar';
 import Header from '@/app/_components/Header';
 import Aside from '@/app/_components/Aside';
+import BottomPlayer from './_components/player/BottomPlayer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           <main className='lg:pr-98'>{children}</main>
           <Aside />
         </div>
+        <BottomPlayer />
       </body>
     </html>
   );

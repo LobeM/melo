@@ -5,7 +5,7 @@ import NewReleaseListItem from './listItems/NewReleaseListItem';
 
 export default function Aside() {
   return (
-    <aside className='bg-gray-900 px-4 lg:px-8 lg:fixed lg:bottom-0 lg:right-0 lg:top-16 lg:w-96 lg:overflow-y-auto'>
+    <aside className='bg-gray-900 px-4 lg:px-8 lg:fixed lg:bottom-20 lg:right-0 lg:top-16 lg:w-96 lg:overflow-y-auto'>
       {/* New Realeases */}
       <section>
         <div className='flex justify-between'>
