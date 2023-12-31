@@ -14,10 +14,16 @@ const FavouriteArtistListItem = ({
 }: IFavouriteArtistListItem) => {
   return (
     <li className='flex items-center gap-x-2'>
-      <span className='text-6xl font-black -me-4 -mt-1 font-outline-1'>
-        {count}
-      </span>
-      <div className='flex-none w-12 h-12 bg-purple-300 rounded-md'></div>
+      <div className='w-[4.5rem] flex items-center'>
+        {/* <div className='bg-blue-500 w-10 h-10 rounded-full'></div>
+        <span className='ml-2 overflow-hidden whitespace-no-wrap'>
+          123456789
+        </span> */}
+        <span className='text-6xl font-black -mt-1 font-outline-1 overflow-hidden'>
+          {count}
+        </span>
+        <div className='flex-none w-12 h-12 bg-purple-300 rounded-md'></div>
+      </div>
       <div className='flex-1'>
         <p>{name}</p>
         <p className='text-xs leading-6 text-gray-400'>
