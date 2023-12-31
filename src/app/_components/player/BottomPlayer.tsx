@@ -20,6 +20,12 @@ const BottomPlayer = () => {
     handleDrag(event);
   };
 
+  const handleMouseMove = (event: MouseEvent<HTMLDivElement>) => {
+    if (isDragging) {
+      handleDrag(event);
+    }
+  };
+
   const handleMouseUp = () => {
     setIsDragging(false);
   };
@@ -44,11 +50,11 @@ const BottomPlayer = () => {
   return (
     <div className='absolute bottom-0 left-0 right-0 flex items-center space-x-8 h-20 shrink-0 bg-gray-800 px-4 py-2 z-50'>
       {/* Now Playing */}
-      <div className='flex items-center space-x-2'>
+      <div className='flex w-64 items-center space-x-2'>
         <div className='flex-none w-12 h-12 bg-purple-300 rounded-md'></div>
         <div>
-          <h4>Welcome to the horrorwood</h4>
-          <p className='text-xs text-gray-400'>Ice nine kills</p>
+          <p>Mask Off</p>
+          <p className='text-xs text-gray-400'>Future</p>
         </div>
       </div>
       {/* Playback Controls */}
@@ -73,6 +79,8 @@ const BottomPlayer = () => {
             id='progress-bar'
             className='h-2 bg-blue-500 rounded-full relative draggable'
             onMouseDown={handleMouseDown}
+            onMouseMove={handleMouseMove}
+            onMouseUp={handleMouseUp}
           >
             <div className='h-full bg-blue-700 rounded-full'></div>
             <div className='w-4 h-4 bg-white border-2 border-blue-500 rounded-full absolute top-1/2 transform -translate-y-1/2'></div>

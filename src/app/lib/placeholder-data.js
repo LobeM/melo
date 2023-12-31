@@ -7,11 +7,34 @@ export const playlists = [
 ];
 
 export const newReleases = [
-  { title: 'Calamity', artist: 'Annisokay', album: 'Calamity', year: 2023 },
   {
-    title: 'Last Resort (Reimagined)',
-    artist: 'Falling in reverse',
-    album: 'single',
+    title: 'Let Me Calm Down (feat. J. Cole)',
+    artist: 'Nicki Minaj, J. Cole',
+    album: 'Pink Friday 2',
     year: 2023,
   },
+  {
+    title: 'IDGAF (feat. Yeat)',
+    artist: 'Drake',
+    album: 'For All The Dogs',
+    year: 2023,
+  },
+];
+
+export const listenMore = [
+  { title: "It's Plenty", artist: 'Burna Boy', favorite: true },
+  { title: 'Wiyu', artist: 'Killa, Legend Son', favorite: true },
+  {
+    title: 'All Time Low',
+    artist: 'Jon Bellion',
+    favorite: false,
+  },
+];
+
+export const favoriteArtists = [
+  { name: 'Billie Eilish', subscribers: 432 },
+  { name: 'AJR', subscribers: 31 },
+  { name: 'Jay-Z', subscribers: 183 },
+  { name: 'Lecrae', subscribers: 108 },
+  { name: 'Sampa the Great', subscribers: 79 },
 ];

@@ -34,7 +34,7 @@ const music: NavigationItem[] = [
 
 export default function Sidebar() {
   return (
-    <div className='bg-gray-900 hidden xl:fixed xs:inset-y-0 xl:top-0 xl:bottom-20 xl:z-40 xl:flex xl:w-72 xl:flex-col gap-y-5 overflow-y-auto no-scrollbar '>
+    <div className='bg-gray-900 hidden xl:fixed xs:inset-y-0 xl:top-0 xl:bottom-20 xl:z-40 xl:flex xl:w-72 xl:flex-col gap-y-5 overflow-y-auto no-scrollbar'>
       <div className='flex h-16 shrink-0 items-center p-4'>
         <img
           className='h-8 w-auto'
