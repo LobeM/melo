@@ -48,7 +48,7 @@ const BottomPlayer = () => {
   };
 
   return (
-    <div className='absolute bottom-0 left-0 right-0 flex items-center space-x-8 h-20 shrink-0 bg-gray-800 px-4 py-2 z-50'>
+    <div className='sticky bottom-0 left-0 right-0 flex items-center space-x-8 h-20 shrink-0 bg-gray-800 px-4 py-2 z-50'>
       {/* Now Playing */}
       <div className='flex w-64 items-center space-x-2'>
         <div className='flex-none w-12 h-12 bg-purple-300 rounded-md'></div>

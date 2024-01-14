@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Sidebar from '@/app/_components/Sidebar';
-import Header from '@/app/_components/Header';
-import Aside from '@/app/_components/Aside';
-import BottomPlayer from './_components/player/BottomPlayer';
+import Sidebar from '@/app/components/Sidebar';
+import Header from '@/app/components/Header';
+import Aside from '@/app/components/Aside';
+import BottomPlayer from './components/player/BottomPlayer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,7 +26,7 @@ export default function RootLayout({
         <div className='xl:pl-72'>
           {/* Sticky header */}
           <Header />
-          <main className='lg:pr-98'>{children}</main>
+          <main className='lg:pr-96 pb-4 overflow-y-auto'>{children}</main>
           <Aside />
         </div>
         <BottomPlayer />

@@ -9,7 +9,7 @@ import Link from 'next/link';
 
 export default function Header() {
   return (
-    <div className='sticky top-0 flex h-16 shrink-0 items-center gap-x-4 px-4 shadow-sm sm:px-6 lg:px-8'>
+    <div className='sticky top-0 flex h-16 shrink-0 items-center gap-x-4 px-4 shadow-sm sm:px-6 lg:px-8 bg-gray-900'>
       {/* Mobile menu button */}
       <button
         type='button'
