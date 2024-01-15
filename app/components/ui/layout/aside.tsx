@@ -5,9 +5,9 @@ import {
   listenMore,
   favoriteArtists,
 } from '@/app/lib/placeholder-data';
-import NewReleaseListItem from './listItems/NewReleaseListItem';
-import ListenMoreListItem from './listItems/ListenMoreListItem';
-import FavouriteArtistListItem from './listItems/FavouriteArtistListItem';
+import NewReleaseListItem from '../listItems/NewReleaseListItem';
+import ListenMoreListItem from '../listItems/ListenMoreListItem';
+import FavouriteArtistListItem from '../listItems/FavouriteArtistListItem';
 
 export default function Aside() {
   return (
