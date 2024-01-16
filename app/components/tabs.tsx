@@ -51,7 +51,7 @@ export function Tabs({ children, ...props }: { children: ReactNode }) {
         </select>
       </div>
       <div className='hidden sm:block'>
-        <div className='boarder-b border-gray-200'>
+        <div className='border-t border-gray-500/50'>
           <nav className='-mb-px flex space-x-8' aria-label='Tabs'>
             {children instanceof Array &&
               children.map((child) => (
@@ -59,9 +59,9 @@ export function Tabs({ children, ...props }: { children: ReactNode }) {
                   key={child.props.label}
                   className={clsx(
                     activeTab === child.props.label
-                      ? 'border-indigo-500 text-indigo-600'
-                      : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
-                    'whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium'
+                      ? 'border-orange-600 text-orange-600 bg-gradient-to-b from-orange-600/30 to-30%'
+                      : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-300',
+                    'whitespace-nowrap border-t-2 py-4 px-1 text-sm font-medium'
                   )}
                   onClick={(e: MouseEvent<HTMLButtonElement>) =>
                     handleClick(e, child.props.label)
@@ -71,7 +71,7 @@ export function Tabs({ children, ...props }: { children: ReactNode }) {
                 </button>
               ))}
           </nav>
-          <div className='py-4'>
+          <div>
             {children instanceof Array &&
               children.map((child) => {
                 if (child.props.label == activeTab) {

@@ -4,7 +4,7 @@ import {
   newReleases,
   listenMore,
   favoriteArtists,
-} from '@/app/lib/placeholder-data';
+} from '@/lib/placeholder-data';
 import NewReleaseListItem from '../listItems/NewReleaseListItem';
 import ListenMoreListItem from '../listItems/ListenMoreListItem';
 import FavouriteArtistListItem from '../listItems/FavouriteArtistListItem';

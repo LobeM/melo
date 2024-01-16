@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Sidebar from '@/app/components/ui/layout/sidebar';
-import Header from '@/app/components/ui/layout/header';
-import Aside from '@/app/components/ui/layout/aside';
-import BottomPlayer from '@/app/components/ui/player/BottomPlayer';
+import Sidebar from '@/components/ui/layout/sidebar';
+import Header from '@/components/ui/layout/header';
+import Aside from '@/components/ui/layout/aside';
+import BottomPlayer from '@/components/ui/player/BottomPlayer';
 
 const inter = Inter({ subsets: ['latin'] });
 

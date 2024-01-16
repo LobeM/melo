@@ -10,8 +10,8 @@ import {
 } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 
-import { playlists } from '@/app/lib/placeholder-data';
-import { textToColor } from '@/app/lib/utils';
+import { playlists } from '@/lib/placeholder-data';
+import { textToColor } from '@/lib/utils';
 
 export type NavigationItem = {
   name: string;
