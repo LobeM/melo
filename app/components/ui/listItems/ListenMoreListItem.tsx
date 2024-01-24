@@ -16,7 +16,7 @@ const ListenMoreListItem = ({
   favorite,
 }: IListenMoreListItem) => {
   return (
-    <li className='flex items-center gap-x-2'>
+    <li className='flex items-center gap-x-1'>
       <div className='flex-none w-12 h-12 bg-purple-300 rounded-md'></div>
       <div className='flex-1'>
         <h4>{title}</h4>

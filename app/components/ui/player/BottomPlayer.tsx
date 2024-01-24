@@ -9,7 +9,7 @@ import {
   RiSkipForwardFill,
   RiVolumeUpFill,
 } from 'react-icons/ri';
-import React, { useState } from 'react';
+import React, { useState, MouseEvent } from 'react';
 import { HeartIcon } from '@heroicons/react/24/outline';
 
 const BottomPlayer = () => {

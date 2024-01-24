@@ -38,3 +38,41 @@ export const favoriteArtists = [
   { name: 'Lecrae', subscribers: 108 },
   { name: 'Sampa the Great', subscribers: 79 },
 ];
+
+export const feedPlaylist = [
+  {
+    id: 1,
+    name: 'Workouts at the gym',
+    tracks: 29,
+    duration: 'PT2H15M',
+    dateUpdated: '2023-06-23',
+  },
+  {
+    id: 2,
+    name: 'Tracks without lyrics',
+    tracks: 35,
+    duration: 'PT2H15M',
+    dateUpdated: '2023-04-27',
+  },
+  {
+    id: 3,
+    name: 'Funny stuff',
+    tracks: 108,
+    duration: 'PT6H48M',
+    dateUpdated: '2023-02-12',
+  },
+  {
+    id: 4,
+    name: 'Careful driving vibes',
+    tracks: 84,
+    duration: 'PT5H9M',
+    dateUpdated: '2023-04-18',
+  },
+  {
+    id: 5,
+    name: 'Philosophy during walking',
+    tracks: 52,
+    duration: 'PT3H59M',
+    dateUpdated: '2023-12-21',
+  },
+];

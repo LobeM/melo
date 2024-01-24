@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 // Generate a hex color form text
 String.prototype.toColor = function () {
   var colors = [
@@ -60,4 +62,14 @@ export const textToColor = (text: string) => {
   }
   hash = ((hash % colors.length) + colors.length) % colors.length;
   return colors[hash];
+};
+
+export const formatDate = (dateString: string): string => {
+  const date = moment(dateString);
+  return date.format('D MMMM, YYYY');
+};
+
+export const formatDuration = (durationString: string): string => {
+  const duration = moment.duration(durationString);
+  return `${duration.hours()}h ${duration.minutes()}m`;
 };
